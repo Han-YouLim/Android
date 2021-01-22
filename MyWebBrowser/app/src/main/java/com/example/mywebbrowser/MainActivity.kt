@@ -14,7 +14,7 @@ import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.EditText
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() { //한유림
     lateinit var webView: WebView
     lateinit var urlEditText:EditText
     lateinit var backButton:Button
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
             webView.reload() //못하면 새로고침이나 하셈
         }
     }
-    
+
     //뒤로가기 버튼 눌렸을 때
     override fun onBackPressed() {
         if(webView.canGoBack()){ //goback이 가능할 때

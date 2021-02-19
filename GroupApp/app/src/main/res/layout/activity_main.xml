@@ -108,6 +108,4 @@
             android:background="#DDDDFC"
             android:padding="20dp" />
     </LinearLayout>
-
-
 </LinearLayout>

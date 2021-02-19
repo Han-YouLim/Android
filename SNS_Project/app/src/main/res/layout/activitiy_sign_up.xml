@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="회원가입"
+        android:textColor="#0CA9BD"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEdtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:paddingRight="10px"
+            android:paddingBottom="20px" />
+
+        <EditText
+            android:id="@+id/passwordEdtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:paddingRight="10px"
+            android:paddingBottom="20px" />
+
+        <EditText
+            android:id="@+id/passwordCheckEdtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:paddingRight="10px"
+            android:paddingBottom="20px" />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:paddingRight="10px"
+            android:paddingBottom="20px"
+            android:text="회원가입"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/gotologinbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:paddingRight="10px"
+            android:paddingBottom="20px"
+            android:text="로그인"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

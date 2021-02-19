@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() { //한유림
     lateinit var myHelper: myDBHelper //myDBHelper클래스(SQLiteOpenHelper상속)의 인스턴스(내부 클래스임)
     lateinit var sqlDB:SQLiteDatabase //SQLiteDatabase클래스의 인스턴스
     lateinit var edtName: EditText
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         btnInsert.setOnClickListener {
             sqlDB = myHelper.writableDatabase
             sqlDB.execSQL("INSERT INTO groupTBL VALUES ( '"+edtName.text.toString()+"' , "
-            +edtNumber.text.toString() + ");")
+                    +edtNumber.text.toString() + ");")
             sqlDB.close()
             Toast.makeText(applicationContext,"입력됨", Toast.LENGTH_SHORT).show()
             btnSelect.callOnClick() //조회버튼 누른것 처럼
